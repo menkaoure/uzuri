@@ -1,0 +1,104 @@
+FORMAT: 1A
+HOST: https://uzuri.com/
+
+# uzuri
+
+Uzuri is a search portal for african hairdressers
+
+# Group Users
+
+## Users Collection [/users]
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "id": "",
+                "username": "Swift",
+                "email": ""
+            }, {
+                "id": "",
+                "username": "Python",
+                "email": ""
+            }, {
+                "id": ""
+                "username": "Objective-C",
+                "email": ""
+            }, {
+                "id": ""
+                "username": "Ruby",
+                "email": ""
+            }
+        ]
+
+## Get an User [/users/{user_id}]
+
+### Get an user [GET]
+
++ Response 200 (application/json)
+
+        {
+            "id": ""
+            "username": "Swift",
+            "email": ""
+        }
+
+## Create an User [/users/{email}/{password}]
+
+### Create an user [POST]
+
++ Request (application/json)
+
+        {
+            "email": "",
+            "password": ""
+        }
+
++ Response 201 (application/json)
+
+        {
+            "id": ""
+        }
+
+# Group Ads
+
+## Get Ads from a defined area [/ads/{city}/{coordinates}]
+
+### Get Ads [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "id": "",
+                "name": "Swift",
+                "description": "",
+                "owner": "",
+                "pictures": ""
+                "customer_gender": ""
+            }, {
+                "id": "",
+                "name": "Swift",
+                "description": "",
+                "owner": "",
+                "pictures": ""
+                "customer_gender": ""
+            }, {
+                "id": "",
+                "name": "Swift",
+                "description": "",
+                "owner": "",
+                "pictures": ""
+                "customer_gender": ""
+            }, {
+                "id": "",
+                "name": "Swift",
+                "description": "",
+                "owner": "",
+                "pictures": ""
+                "customer_gender": ""
+            }
+        ]
+
