@@ -8,6 +8,7 @@ import (
 	"github.com/menkaoure/uzuri/models"
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 type UserController struct {
